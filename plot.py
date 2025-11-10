@@ -10,7 +10,7 @@ speedups = [s / p for s, p in zip(serial_times, parallel_times)]
 plt.plot(threads, speedups, marker='o')
 plt.xlabel('Threads')
 plt.ylabel('Speedup')
-plt.title('Grover's Algorithm Speedup (OpenMP Parallel vs Serial)')
+plt.title("Grover's Algorithm Speedup (OpenMP Parallel vs Serial)")
 plt.grid(True)
 plt.savefig('speedup_plot.png')
 plt.show()
